@@ -41,4 +41,7 @@ fetch(api)
         window.location = 'index.html'
     })
 })
+.catch(err => {
+    document.write('<h1 class="text-center display-1">Hata!</h1>')
+})
 })
