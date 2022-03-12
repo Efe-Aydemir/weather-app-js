@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
     let newCity = city.value[0].toUpperCase()+city.value.slice(1)
 
 
-    let api = `http://api.weatherapi.com/v1/current.json?key=00d93e8b17be43da9bc134752221203&q=${newCountry}/${newCity}&aqi=no`
+    let api = `https://api.weatherapi.com/v1/current.json?key=00d93e8b17be43da9bc134752221203&q=${newCountry}/${newCity}&aqi=no`
 fetch(api)
 .then(response => {
     if (response.status === 200) {
